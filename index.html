@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="RouteRouting">
+<head>
+	<title>Highway Routes</title>
+</head>
+<body>
+	<h1>Highway Routes</h1>
+	<div>
+	<ul>
+	<li><a ng-href="#!/">Home</a></li>
+	<li><a ng-href="#!/highway1">Highway 1</a></li>
+	<li><a ng-href="#!/highway2">Highway 2</a></li>
+	</ul>
+	</div>
+	<div ng-view=""></div>
+
+	<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controllers/highway1Ctrl.js"></script>
+	<script src="app/controllers/highway2Ctrl.js"></script>
+
+</html>
